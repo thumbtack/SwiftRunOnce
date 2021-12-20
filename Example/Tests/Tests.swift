@@ -1,5 +1,6 @@
 import Foundation
 import XCTest
+import SwiftRunOnce
 
 class RunOnceTest: XCTestCase {
     func testOnlyRunsOnce() {

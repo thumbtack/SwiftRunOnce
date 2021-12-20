@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SwiftRunOnce_Example' do
+  pod 'SwiftRunOnce', :path => '../'
+
+  target 'SwiftRunOnce_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

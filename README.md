@@ -1,7 +1,7 @@
-# Swift-RunOnce
-Swift-RunOnce allows a developer to mark a block of logic as "one-time" code – code that will execute at most once over the lifetime of another object, no matter how many times that block of logic gets invoked.
+# SwiftRunOnce
+SwiftRunOnce allows a developer to mark a block of logic as "one-time" code – code that will execute at most once over the lifetime of another object, no matter how many times that block of logic gets invoked.
 
-Swift-RunOnce was designed to satisfy five requirements:
+SwiftRunOnce was designed to satisfy five requirements:
 - Robust implementation: A block of code to declared to be one-time code must be just that. There may be no circumstance in which the block of code is allowed to execute a second time over the lifetime of the controlling object.
 - Declarative usage: One must be able to make a block of preexisting code into one-time code simply by decorating with the attribute.
 - Thread safety: Even in multithreaded environments, a block of code marked with the one-time attribute must execute at most once.
@@ -10,7 +10,7 @@ Swift-RunOnce was designed to satisfy five requirements:
 
 # Usage
 
-Swift-RunOnce exposes a single function:
+SwiftRunOnce exposes a single function:
 
 ```swift
 forLifetime(
@@ -35,7 +35,7 @@ func viewDidAppear(animated: Bool) {
 }
 ```
 
-Since most usages of `forLifetime(of::)` will pass `self` as the object, Swift-RunOnce adds a convenience extension to `NSObject` that adds a little more syntactic sugar to this common case.  Using that extension, the above code simply becomes: 
+Since most usages of `forLifetime(of::)` will pass `self` as the object, SwiftRunOnce adds a convenience extension to `NSObject` that adds a little more syntactic sugar to this common case.  Using that extension, the above code simply becomes: 
 
 ```swift 
 func viewDidAppear(animated: Bool) {
@@ -50,4 +50,4 @@ func viewDidAppear(animated: Bool) {
 
 # License
 
-Swift-RunOnce is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/thumbtack/Swift-RunOnce/blob/master/LICENSE) for the full license text.
+SwiftRunOnce is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/thumbtack/SwiftRunOnce/blob/master/LICENSE) for the full license text.

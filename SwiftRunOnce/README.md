@@ -9,26 +9,19 @@ SwiftRunOnce was designed to satisfy five requirements:
 - Minimalist implementation: Adding a block of one-time code requires no additional storage or maintenance of state within the calling code.  All state management is hidden and protected.
 
 # Installation
-[SwiftRunOnce](http://cocoapods.org/) is available as a CocoaPods pod.  CocoaPods is a dependency manager for Swift projects.  To install it, run:
-```bash
-$ gem install cocoapods
-``` 
 
-To integrate swift runOnce into your project, add `pod SwiftRunOnce` to the target in your Podfile.
+### Swift Package Manager
 
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
-use_frameworks!
+[Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
-target '<Your Target Name>' do
-    pod 'SwiftRunOnce'
-end
-```
+> Xcode 11+ is required to build SwiftRunOnce using Swift Package Manager.
 
-Then run:
-```bash
-$ pod install
+To integrate SwiftRunOnce into your Xcode project using Swift Package Manager, add it to the dependencies value of your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/thumbtack/SwiftRunOnce.git", .upToNextMajor(from: "0.2.0"))
+]
 ```
 
 # Usage

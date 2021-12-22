@@ -8,6 +8,29 @@ SwiftRunOnce was designed to satisfy five requirements:
 - Reentrancy: A block of one-time code must be able to invoke another block of one-time code without deadlocking or invalidating the one-time constraint.
 - Minimalist implementation: Adding a block of one-time code requires no additional storage or maintenance of state within the calling code.  All state management is hidden and protected.
 
+# Installation
+[SwiftRunOnce](http://cocoapods.org/) is available as a CocoaPods pod.  CocoaPods is a dependency manager for Swift projects.  To install it, run:
+```bash
+$ gem install cocoapods
+``` 
+
+To integrate swift runOnce into your project, add `pod SwiftRunOnce` to the target in your Podfile.
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'SwiftRunOnce'
+end
+```
+
+Then run:
+```bash
+$ pod install
+```
+
 # Usage
 
 SwiftRunOnce exposes a single function:

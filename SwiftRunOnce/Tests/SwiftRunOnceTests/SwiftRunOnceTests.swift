@@ -1,8 +1,7 @@
-import Foundation
 import XCTest
-import SwiftRunOnce
+@testable import SwiftRunOnce
 
-class RunOnceTest: XCTestCase {
+final class SwiftRunOnceTests: XCTestCase {
     func testOnlyRunsOnce() {
         var innerCounter = 0
         var outerCounter = 0

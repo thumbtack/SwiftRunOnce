@@ -1,6 +1,0 @@
-framework module SwiftRunOnce {
-  umbrella header "SwiftRunOnce-umbrella.h"
-
-  export *
-  module * { export * }
-}

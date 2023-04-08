@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E8C3C0129E09E4B0019C693 /* SwiftRunOnce */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftRunOnce; path = ../SwiftRunOnce; sourceTree = "<group>"; };
+		4EDB17F729E0DD6100084D31 /* SwiftRunOnce */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftRunOnce; path = ..; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftRunOnce_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRunOnce_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		3A10C40075BF010128DC6A89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E8C3C0129E09E4B0019C693 /* SwiftRunOnce */,
+				4EDB17F729E0DD6100084D31 /* SwiftRunOnce */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

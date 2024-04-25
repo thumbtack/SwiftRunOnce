@@ -20,7 +20,7 @@ To integrate SwiftRunOnce into your Xcode project using Swift Package Manager, a
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/thumbtack/SwiftRunOnce.git", .upToNextMajor(from: "0.2.0"))
+    .package(url: "https://github.com/thumbtack/SwiftRunOnce.git", .upToNextMajor(from: "0.2.2"))
 ]
 ```
 
